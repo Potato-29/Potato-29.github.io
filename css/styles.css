@@ -1,0 +1,229 @@
+nav{
+
+    -webkit-transition: background-color 0.5s ease-out;
+      -moz-transition: background-color 0.5s ease-out;
+      -o-transition: background-color 0.5s ease-out;
+      transition: background-color 0.5s ease-out;
+}
+
+#navBrand{
+    font-family: 'Spartan', serif;
+    font-size: 40px;
+    padding: 10px;
+}
+.nav-item{
+    padding: 10px 10px 10px 20px;    
+}
+header{
+    background:     linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0)
+      ), url("/assets/images/img2.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  z-index: -100;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+h1{
+    text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+p{
+    margin: 0;
+  font-size: 1.3rem;
+}
+main{
+    max-width: 500px;
+  margin: 20px auto;
+  padding-top: 1000px;
+}
+.navbar.transparent.navbar-expand-lg.navbar-light{
+    background: rgba(0,0,0,0.4);
+}
+.container{
+    justify-content: center;
+    align-items: center;
+}
+.introTXT{
+    padding-top: 350px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;    
+    font-size: 50px;
+    margin: 20px;
+}
+
+/*FADE EFFECT BUTTON*/
+
+/*.hvr-fade {
+
+    
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: white;
+
+    color: black;
+  }*/
+ 
+
+  .hvr-curl-top-left {
+    background-color: transparent;
+    color: white;
+    padding: 16px 45px;
+    position: absolute;
+    left: 330px;
+    border: 3px solid white;
+    transition: all 0.1s ease-out 0.1s;
+    background-color: transparent;
+    color: white;
+    padding: 16px 45px;
+    left: 30px;
+    border: 1px solid white;
+    transition: all 0.1s ease-out 0.1s;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  .hvr-curl-top-left:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: white;
+    
+    background: linear-gradient(135deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+    
+    z-index: 1000;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+  }
+  .hvr-curl-top-left:hover:before, .hvr-curl-top-left:focus:before, .hvr-curl-top-left:active:before {
+    width: 25px;
+    height: 25px;
+  }
+  
+  
+  
+
+
+@media only screen and (max-width: 600px) {
+    .introTXT{
+        padding-top: 370px;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;    
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .welcomeMessage{
+        color: white;
+        font-size: 10px;
+        padding-top: 10px;
+        
+        font-family: 'Spartan', serif;
+    }
+
+}
+@media only screen and (min-width: 600px){
+    .welcomeMessage{
+        color: white;
+        font-size: px;
+        padding-top: 10px;
+        
+        font-family: 'Spartan', serif;
+    }
+}
+@media only screen and (min-width: 768px){
+    .welcomeMessage{
+        color: white;
+        padding-left: 400px;
+        padding-top: 10px;
+        font-family: 'Spartan', serif;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .welcomeMessage{
+        color: white;
+        padding-left: 460px;
+        padding-top: 10px;
+        font-family: 'Spartan', serif;
+    }  
+}
+
+@media only screen and (min-width: 1200px){
+    .welcomeMessage{
+        color: white;
+        padding-left: 460px;
+        padding-top: 10px;
+        font-family: 'Spartan', serif;
+    }
+}
+
+
+
+#about{
+
+}
+
+.skill{
+    padding: 240px 100px 150px 100px;
+}
+.skillText{
+    margin-right: 100px;
+}
+.skillBar{
+    
+}
+.html{
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.css{
+    font-size: 20px;
+    padding-left: 55px;
+    padding-bottom: 20px;
+}
+.js{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+/*.vl{
+    border-left: 3px solid white;
+  height: 90px;
+  position: absolute;
+  left: 230px;
+  margin-left: -3px;
+  top: 0px;
+}*\
+
