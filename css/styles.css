@@ -1,3 +1,14 @@
+/* GLOBAL FONTS */
+#navBrand, .welcomeMessage, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
+    /*Fredricka is a great font*/  
+    font-family: 'Fredericka the Great', sans-serif;
+
+}
+
+#navBrand, .introTXT, .hvr-curl-top-left{
+    font-family: 'Caveat', sans-serif;
+}
+
 nav{
 
     -webkit-transition: background-color 0.5s ease-out;
@@ -7,9 +18,9 @@ nav{
 }
 
 #navBrand{
-    font-family: 'Spartan', serif;
     font-size: 40px;
     padding: 10px;
+    
 }
 .nav-item{
     padding: 10px 10px 10px 20px;    
@@ -55,7 +66,8 @@ main{
 .introTXT{
     padding-top: 350px;
     color: white;
-    font-family: 'Josefin Sans', sans-serif;    
+    
+    /*Caveat font is good*/ 
     font-size: 50px;
     margin: 20px;
 }
@@ -84,6 +96,7 @@ main{
  
 
   .hvr-curl-top-left {
+
     background-color: transparent;
     color: white;
     padding: 16px 45px;
@@ -142,6 +155,91 @@ main{
     }
 }
 
+
+/*SKILL SECTION BREAKPOINTS*/
+
+
+
+
+@media only screen and (max-width: 1920px){
+    .skillBar1{
+        
+    }
+    .skillBar2{
+        
+    }
+    .skillBar3{
+        
+    }
+    .skillBar4{
+        
+    }
+    .skillBar5{
+        
+    }
+    .skillBar6{
+        margin-left: 400px;
+        
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .skillBar1{
+        
+    }
+    .skillBar2{
+        
+    }
+    .skillBar3{
+        
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .skillBar1{
+        
+    }
+    .skillBar2{
+        
+    }
+    .skillBar3{
+        
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .skill{
+        padding-left: 40px;
+    }
+    .skillBar1{
+        padding-left: 80px;
+    }
+    .skillBar2{
+        padding-left: 80px;
+    }
+    .skillBar3{
+        padding-left: 80px;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    .skillText{
+        margin-bottom: 70px;
+    }
+    .skillBar1{
+        padding-top: 60px;   
+    }
+    .skillBar2{
+        padding-top: 60px;
+    }
+    .skillBar3{
+        padding-top: 60px;
+    }
+}
+
+
+
+
 /* WELCOME MESSAGE BREAKPOINTS*/
 
 @media only screen and (max-width: 600px) {
@@ -192,10 +290,11 @@ main{
 }
 @media only screen and (min-width: 1920px){
     .welcomeMessage{
+        font-size: 30px;
         color: white;
         padding-left: 650px;
         padding-top: 10px;
-        font-family: 'Spartan', serif;
+        font-family: 'Caveat',sans-serif;
     }
 }
 
@@ -259,19 +358,22 @@ main{
     }
 }
 
-
+h2{
+    font-size: 50px;
+    padding-bottom: 200px;
+    text-align: center;
+}
 
 .skill{
-    padding: 0px 100px 0px 70px;
+    padding: 0px 40px 0px 0px;
     margin-top: 240px;
+    
     margin-bottom: 150px;
 }
 .skillText{
-    
+    font-size: 30px;
 }
-.skillBar{
-    
-}
+
 .html{
     font-size: 20px;
     padding-left: 50px;
@@ -284,6 +386,24 @@ main{
 }
 .js{
     font-size: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.React{
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+.flutter{
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-bottom: 20px;
+}
+.Angularjs{
+    font-size: 20px;
+    padding-top: 50px;
     padding-left: 30px;
     padding-bottom: 20px;
 }

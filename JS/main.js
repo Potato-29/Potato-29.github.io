@@ -38,6 +38,8 @@ const message = document.getElementById('msg');
 document.addEventListener('scroll', function () {
     if(isInViewport(about)){
         message.textContent = "About me"
+        message.style.paddingLeft = "730px"
+       
     }
     /*
     else if(isInViewport(projects)){
@@ -49,6 +51,8 @@ document.addEventListener('scroll', function () {
     */
     else if(isInViewport(header)){
         message.textContent = "Welcome to my portfolio"
+        message.removeAttribute("style")
+       
     }
 }, {
     passive: true
@@ -65,6 +69,7 @@ window.onscroll = () =>{
         //nav.classList.add('bg-dark', 'shadow');
         nav.style.backgroundColor = "black";
         arrow.style.opacity = 0;
+        
 
     } 
     else {
@@ -72,6 +77,7 @@ window.onscroll = () =>{
         //message.innerHTML= "Welcome to my portfolio";
         nav.removeAttribute("style")
         arrow.removeAttribute("style")
+        
     }
 
 }
