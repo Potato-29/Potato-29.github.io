@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -53,13 +55,16 @@
                     
                     <button class="hvr-curl-top-left ">MY PROJECTS</button>
                 </div>
+                <span class="material-icons md-24" id="icon">
+                    arrow_drop_down
+                    </span>
             </div>
         </div>
     </header>
     
-    <div class="container wrapper">
-        <div class="row justify-content-start skill" id="about">
-            <div class="col-lg-6">
+    <div  class="container wrapper" >
+        <div  class="row justify-content-start skill p-5 border" id="about">
+            <div data-aos="zoom-out" class="col-lg-6 skillText">
                 Hi there, Name's Prayas i love coding blahblahblahblahblahblah<br>
                 blahblahblahblahblahblahblahblahblah<br>
                 blahblahblahblahblahblahblahblahblah<br>
@@ -75,19 +80,19 @@
                 blahblahblahblahblahblahblahblahblah
                 blahblahblahblahblahblahblahblahblah
             </div>
-            <div class="col-lg-2 fix">
+            <div data-aos="zoom-out" class="col-lg-2 fix skillBar" >
                 <div class="html">HTML</div>
                 <div class="pie"
                     data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 90, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
                 </div>
             </div>
-            <div class="col-lg-2 fix">
+            <div data-aos="zoom-out" class="col-lg-2 fix skillBar">
                 <div class="css">CSS</div>
                 <div class="pie"
                     data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 75, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
                 </div>
             </div>
-            <div class="col-lg-2 fix">
+            <div data-aos="zoom-out" class="col-lg-2 fix skillBar">
                 <div class="js">JavaScript</div>
                 <div class="pie"
                     data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 60, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
@@ -96,7 +101,7 @@
 
         </div>
     </div>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/JS/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="circular-progress-bar-master/docs/circularProgressBar.min.js"></script>

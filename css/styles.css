@@ -135,19 +135,21 @@ main{
 
 @media only screen and (max-width: 600px) {
     .introTXT{
-        padding-top: 370px;
+        padding-top: 280px;
         color: white;
         font-family: 'Josefin Sans', sans-serif;    
         font-size: 30px;
     }
 }
 
+/* WELCOME MESSAGE BREAKPOINTS*/
+
 @media only screen and (max-width: 600px) {
     .welcomeMessage{
         color: white;
-        font-size: 10px;
+        font-size: 7px;
         padding-top: 10px;
-        
+        margin-right: 10px;
         font-family: 'Spartan', serif;
     }
 
@@ -164,7 +166,8 @@ main{
 @media only screen and (min-width: 768px){
     .welcomeMessage{
         color: white;
-        padding-left: 400px;
+        padding-left: 250px;
+        margin-right: 20px;
         padding-top: 10px;
         font-family: 'Spartan', serif;
     }
@@ -173,7 +176,7 @@ main{
 @media only screen and (min-width: 992px){
     .welcomeMessage{
         color: white;
-        padding-left: 460px;
+        padding-left: 220px;
         padding-top: 10px;
         font-family: 'Spartan', serif;
     }  
@@ -182,23 +185,89 @@ main{
 @media only screen and (min-width: 1200px){
     .welcomeMessage{
         color: white;
-        padding-left: 460px;
+        padding-left: 350px;
+        padding-top: 10px;
+        font-family: 'Spartan', serif;
+    }
+}
+@media only screen and (min-width: 1920px){
+    .welcomeMessage{
+        color: white;
+        padding-left: 650px;
         padding-top: 10px;
         font-family: 'Spartan', serif;
     }
 }
 
+/* DOWN ARROW BREAKPOINTS */
 
-
-#about{
+@media only screen and (max-width: 600px) {
+    .material-icons.md-24{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 25px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
 
 }
+
+
+@media only screen and (min-width: 600px){
+    .material-icons.md-24{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 0px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .material-icons.md-24{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 90px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+}
+
+
+@media only screen and (min-width: 992px){
+    .material-icons.md-24{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 230px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    } 
+}
+
+@media only screen and (min-width: 1200px){
+    .material-icons.md-24{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 230px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+}
+
+
 
 .skill{
-    padding: 240px 100px 150px 100px;
+    padding: 0px 100px 0px 70px;
+    margin-top: 240px;
+    margin-bottom: 150px;
 }
 .skillText{
-    margin-right: 100px;
+    
 }
 .skillBar{
     

@@ -1,8 +1,12 @@
 
 
+AOS.init();
+
 var nav = document.querySelector('nav');
 var welcomeMsg = document.getElementById('msg');
 var color = document.getElementsByTagName(nav);
+var arrow =  document.getElementById('icon');
+
 
 //var message = document.createElement("div");
 window.addEventListener('DOMContentLoaded', () =>{
@@ -35,12 +39,14 @@ document.addEventListener('scroll', function () {
     if(isInViewport(about)){
         message.textContent = "About me"
     }
+    /*
     else if(isInViewport(projects)){
         message.textContent = "Projects"
     }
     else if(isInViewport(contact)){
         message.textContent = "Contact"
     }
+    */
     else if(isInViewport(header)){
         message.textContent = "Welcome to my portfolio"
     }
@@ -58,11 +64,14 @@ window.onscroll = () =>{
     if(window.pageYOffset > 100){
         //nav.classList.add('bg-dark', 'shadow');
         nav.style.backgroundColor = "black";
+        arrow.style.opacity = 0;
+
     } 
     else {
         nav.classList.remove('bg-dark', 'shadow');
         //message.innerHTML= "Welcome to my portfolio";
         nav.removeAttribute("style")
+        arrow.removeAttribute("style")
     }
 
 }
