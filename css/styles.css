@@ -212,13 +212,13 @@ main{
         padding-left: 40px;
     }
     .skillBar1{
-        padding-left: 80px;
+        padding-left: 120px;
     }
     .skillBar2{
-        padding-left: 80px;
+        padding-left: 120px;
     }
     .skillBar3{
-        padding-left: 80px;
+        padding-left: 120px;
     }
 }
 @media only screen and (max-width: 600px){
