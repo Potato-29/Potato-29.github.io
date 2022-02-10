@@ -1,12 +1,19 @@
 /* GLOBAL FONTS */
-#navBrand, .welcomeMessage, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
+#navBrand, .aboutHeading, #about, .welcomeMessage, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
     /*Fredricka is a great font*/  
-    font-family: 'Fredericka the Great', sans-serif;
+    /* font-family: 'Fredericka the Great', sans-serif; */
+     font-family: 'Julius Sans One'; 
+    /* font-family: 'Unica One'; */
+    
 
 }
-
+body{
+    background-color: #f5f5f5;
+}
 #navBrand, .introTXT, .hvr-curl-top-left{
-    font-family: 'Caveat', sans-serif;
+    /* font-family: 'Caveat', sans-serif; */
+    /* font-family: 'Julius Sans One'; */
+    font-family: 'Fredericka the Great';
 }
 
 nav{
@@ -47,6 +54,11 @@ h1{
   font-size: 3rem;
   white-space: nowrap;
 }
+/* h3{
+    text-align: center;
+    padding-bottom: 100px;
+} */
+
 p{
     margin: 0;
   font-size: 1.3rem;
@@ -71,7 +83,55 @@ main{
     font-size: 50px;
     margin: 20px;
 }
+.brand1{
+    /* padding: 50px 50px 50px 50px; */
+    margin-right: 50px;
+    /* border: solid 2px red; */
+    border-radius: 300px;
+    
+}
 
+.brand3{
+    
+    margin-right: 50px;
+}
+
+.chickBlind{
+    height: 100px;
+    width: 200px;
+    
+}
+.prayasLogo{
+    height: 100px;
+    width: 100px;
+}
+#about{
+    padding: 10px 90px 100px 90px;
+    font-weight: bolder;
+}
+.aboutHeading{
+    padding: 10px 10px 60px 10px;
+    font-weight: bolder;   
+}
+.healthKeeper{
+    height: 200px;
+    width: 200px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutWrapper{
+    padding-bottom: 200px;
+}
+.footerTxt{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 10px 70px 10px;
+}
+.item.text{
+    
+    text-align: end;
+}
 /*FADE EFFECT BUTTON*/
 
 /*.hvr-fade {
@@ -362,6 +422,7 @@ h2{
     font-size: 50px;
     padding-bottom: 200px;
     text-align: center;
+    font-weight: bolder;
 }
 
 .skill{
@@ -371,7 +432,7 @@ h2{
     margin-bottom: 150px;
 }
 .skillText{
-    font-size: 30px;
+    font-size: 1.7rem;
 }
 
 .html{
@@ -416,3 +477,393 @@ h2{
   top: 0px;
 }*\
 
+/* CARD COMPONENT */
+
+  
+  h5
+  {
+    margin:0px;
+    font-size:1.4em;
+    font-weight:700;
+  }
+  
+  p
+  {
+    font-size:12px;
+  }
+  
+  .center
+  {
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* End Non-Essential  */
+  
+  .property-card
+  {
+    height:18em;
+    width:14em;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    position:relative;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius:16px;
+    overflow:hidden;
+    -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  }
+  /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+  
+  /* Top Half of card, image. */
+  #hiddenTxt{
+      text-align: center;
+      padding: 100px 50px 10px 50px;
+      color: black;
+      font-size: 20px;
+  }
+  .property-image
+  {
+    height:5em;
+    width:14em;
+    /* padding:1em 2em; */
+    position:Absolute;
+    top:0px;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image:url('/assets/images/chickBlindTextWhite.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  
+  /* Bottom Card Section */
+  
+  .property-card{
+    /* filter: drop-shadow(2px 2px 1px rgb(68, 67, 67)); */
+  }
+  .property-description
+  {
+      /* FAFAFC OLD WHITE */
+    background: rgba(198, 191, 191, 0.65);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(198, 191, 191, 0.15);
+    /* background-color: rgb(224, 219, 219); */
+    height:13em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+  }
+  
+  /* Social Icons */
+  
+  .property-social-icons
+  {
+    width:1em;
+    height:1em;
+    background-color:black;
+    position:absolute;
+    bottom:1em;
+    left:1em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  /* Property Cards Hover States */
+  
+  .property-card:hover .property-description
+  {
+    height:0em;
+    padding:0px 1em;
+  }
+  .property-card:hover .property-image
+  {
+    
+    width: 14em;
+    
+  }
+  
+  .property-card:hover .property-social-icons
+  {
+    background-color:rgb(75, 133, 207);
+  }
+  
+  .property-card:hover .property-social-icons:hover
+  {
+    background-color:blue;
+    cursor:pointer;
+  }
+  
+  h5
+  {
+    margin:0px;
+    font-size:1.4em;
+    font-weight:700;
+  }
+  
+  p
+  {
+    font-size:12px;
+  }
+  
+  .center
+  {
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* End Non-Essential  */
+  
+  .property-card2
+  {
+    
+    height:18em;
+    width:14em;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    position:relative;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius:16px;
+    overflow:hidden;
+    -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  }
+  /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+  
+  /* Top Half of card, image. */
+  
+  
+  #hiddenTxt{
+      text-align: center;
+      padding: 100px 50px 10px 50px;
+      color: black;
+      font-size: 20px;
+  }
+  .property-image2
+  {
+    height:15em;
+    width:14em;
+    /* padding:1em 2em; */
+    position:Absolute;
+    top:0px;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image:url('/assets/images/logo.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  
+  /* Bottom Card Section */
+  
+  .property-image-title2{
+      color: black;
+    /* filter: drop-shadow(2px 2px 1px rgb(68, 67, 67)); */
+  }
+  .property-description2
+  {
+    /* FAFAFC OLD WHITE */
+    /* From https://css.glass */
+    background: rgba(198, 191, 191, 0.65);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(198, 191, 191, 0.15);
+
+    /* background-color: rgb(224, 219, 219); */
+    height:13em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+  }
+  
+  /* Social Icons */
+  
+  .property-social-icons2
+  {
+    width:1em;
+    height:1em;
+    background-color:black;
+    position:absolute;
+    bottom:1em;
+    left:1em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  /* Property Cards Hover States */
+  
+  .property-card2:hover .property-description2
+  {
+    height:0em;
+    padding:0px 1em;
+  }
+  .property-card2:hover .property-image22
+  {
+    
+    width: 14em;
+    
+  }
+  
+  .property-card2:hover .property-social-icons2
+  {
+    background-color: green;
+  }
+  
+  .property-card2:hover .property-social-icons2:hover
+  {
+    background-color:blue;
+    cursor:pointer;
+  }
+  
+  
+  /* Optional
+  
+  .property-image-title2
+  {
+  text-align:center;
+  position:Relative;
+  top:30%;
+  opacity:0;
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  color:black;
+  font-size:1.2em;
+  }
+  
+  .property-card2:hover .property-image-title2
+  {
+  opacity:1;
+  }
+  
+  */
+
+
+  /* FOOTER SECTION */
+
+  .footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+
+  
