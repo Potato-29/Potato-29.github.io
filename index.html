@@ -36,10 +36,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#aboutSection">About</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#aboutSection">Projects</a>
                     </li>
                 </ul>
 
@@ -48,7 +48,7 @@
         
     </nav>
     <header>
-        <div class="container">
+        <div class="container" id="introWrapper">
             <div class="row align-items-center">
                 <div class="col" id="introBox">
                     <p class="introTXT" id="welcome">I am Prayas Sorathiya.<br>
@@ -57,7 +57,7 @@
                 </div>
                 <div>
                     
-                    <button class="hvr-curl-top-left ">MY PROJECTS</button>
+                    <button class="hvr-curl-top-left " id="btn"><a href="#aboutSection">PROJECTS</a></button> 
                 </div>
                 <span class="material-icons md-24" id="icon">
                     arrow_drop_down
@@ -67,12 +67,12 @@
     </header>
     
     <div  class="container wrapper" >
-        <div class="row justify-content-center skill" id="skills">
+        <div class="row justify-content-center skill" >
             <h2>My Skillset</h2>
-            <div class="col-lg-6 skillText" data-aos="zoom-out">
-                I am adept and experienced with HTML, CSS, JavaScript, Bootstrap. I've made websites based on them.
+            <div class="col-lg-6 skillText" data-aos="zoom-out" id="skills">
+                <p class="Txt">I am adept and experienced with HTML, CSS, JavaScript, Bootstrap. I've made websites based on them.
                 Currently I'm learning flutter and reactJs and implementing what i learn in projects.<br>
-                Here are a few technologies I’ve been working with recently:<br>
+                Here are a few technologies I’ve been working with recently:<br></p>
                 <ol>
                     <li>JavaScript (ES6+)</li>
                     <li>ReactJS</li>
@@ -116,11 +116,11 @@
             
         </div>
     </div>
-    <div class="aboutWrapper">
-        <h2 class="aboutHeading">About Me   &nbsp;/&nbsp;   My Works</h2>
+    <div class="aboutWrapper" >
+        <h2 class="aboutHeading" id="aboutSection">About Me   &nbsp;/&nbsp;   My Works</h2>
         <div class="row">
             <div class="col-lg-6" id="about">
-                Hello! My name is Prayas and I enjoy creating things that live on the internet. My interest in web development started back in 2016 when i learned HTML in school - turns out hacking together a small game taught me a lot about HTML & CSS!
+                Hello! My name is Prayas and I enjoy creating things that live on the internet. My interest in web development started back in 2016 when i learned HTML in school - turns out hacking together a form website taught me a lot about HTML & CSS!
     
                 Fast-forward to today, and I’ve had the privilege of working at an advertising agency and a start up. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
     
@@ -131,7 +131,7 @@
             <div class="col-sm-2 brand1">
                 <div class="">
                     <div class="property-card">
-                      <a href="#">
+                      <a href="https://chick-blinds.github.io/ChickBlinds/">
                         <div class="property-image">
                             <p id="hiddenTxt">Tap to View</p>
                           <div class="property-image-title">
@@ -143,7 +143,7 @@
                         <h5> ChickBlinds </h5>
                         <p>Developed a beautiful and responsive website for this Advertising agency.</p>
                       </div>
-                      <a href="#">
+                      <a href="">
                         <div class="property-social-icons">
                           <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
                         </div>
@@ -182,8 +182,11 @@
         
         
     </div>
-    <footer class="footer-dark">
-        <p class="footerTxt">See you around.</p>
+    <div>
+        <p class="working">This Website is still under development.<br></p>
+    </div>
+    <footer class="footer-dark" id="footerSection">
+        <p class="footerTxt">See you around.<br>👋</p>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-3 item">
@@ -203,7 +206,7 @@
                 </div>
                 <div class="col-md-6 item text">
                     <h3>Contact me here</h3>
-                    <p>Phone: +91 8780900103<br> Email: csaprayas@gmail.com</p>
+                    <p id="contactInfo">Phone: +91 8780900103<br> Email: csaprayas@gmail.com</p>
                 </div>
                 <div class="col item social"><a href="https://www.instagram.com/prayas_sorathiya/"><i class="icon ion-social-instagram"></i></a></div>
             </div>

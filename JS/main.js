@@ -2,6 +2,8 @@
 
 AOS.init();
 
+
+
 var nav = document.querySelector('nav');
 var welcomeMsg = document.getElementById('msg');
 var color = document.getElementsByTagName(nav);
@@ -24,33 +26,53 @@ function isInViewport(el) {
         );
     }
     
-const header = document.getElementById('welcome');
-const about = document.getElementById('about');
-const projects = document.getElementById('projects');
-const contact = document.getElementById('contact');
-const message = document.getElementById('msg');
+var header = document.getElementById('btn');
+var skillSection = document.getElementById('skills');
+var projects = document.getElementById('aboutSection');
+var footer = document.getElementById('footerSection');
+var message = document.getElementById('msg');
 
 
 
 
-
+var mobile = window.matchMedia("(max-width: 480px)")
+var tablet = window.matchMedia("(min-width: 600px)")
 
 document.addEventListener('scroll', function () {
-    if(isInViewport(about)){
-        message.textContent = "About me"
-        message.style.paddingLeft = "730px"
+    if(isInViewport(skills)){
+        if(mobile.matches || tablet.matches){
+            message.textContent = "Skills"
+        }
+        else{
+            message.textContent = "Skills"
+            message.style.paddingLeft = "500px"
+        }
        
     }
-    /*
+    
     else if(isInViewport(projects)){
-        message.textContent = "Projects"
+        if(mobile.matches || tablet.matches){
+            message.textContent = "Projects"
+        }
+        else{
+            message.textContent = "Projects"
+            message.style.paddingLeft = "500px"
+        }
+        
     }
-    else if(isInViewport(contact)){
-        message.textContent = "Contact"
+    else if(isInViewport(footer)){
+        if(mobile.matches || tablet.matches){
+            message.textContent = "End"
+        }
+        else{
+            message.textContent = "End"
+            message.style.paddingLeft = "500px"
+        }
     }
-    */
+    
     else if(isInViewport(header)){
         message.textContent = "Welcome to my portfolio"
+        
         message.removeAttribute("style")
        
     }

@@ -1,5 +1,5 @@
 /* GLOBAL FONTS */
-#navBrand, .aboutHeading, #about, .welcomeMessage, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
+#navBrand, .working, h3, li, #contactInfo, .copyright, .footerTxt, .aboutHeading, #about, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
     /*Fredricka is a great font*/  
     /* font-family: 'Fredericka the Great', sans-serif; */
      font-family: 'Julius Sans One'; 
@@ -10,7 +10,7 @@
 body{
     background-color: #f5f5f5;
 }
-#navBrand, .introTXT, .hvr-curl-top-left{
+#navBrand, .introTXT, .welcomeMessage, .nav-item, .hvr-curl-top-left{
     /* font-family: 'Caveat', sans-serif; */
     /* font-family: 'Julius Sans One'; */
     font-family: 'Fredericka the Great';
@@ -126,17 +126,25 @@ main{
 .footerTxt{
     text-align: center;
     font-size: 20px;
-    padding: 10px 10px 70px 10px;
+    padding: 10px 10px 50px 10px;
 }
 .item.text{
     
     text-align: end;
 }
+
 /*FADE EFFECT BUTTON*/
 
-/*.hvr-fade {
+/* .hvr-fade {
 
     
+    background-color: transparent;
+    color: white;
+    padding: 16px 45px;
+    
+    left: 30px;
+    border: 1px solid white;
+    transition: all 0.1s ease-out 0.1s;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -152,11 +160,26 @@ main{
     background-color: white;
 
     color: black;
-  }*/
- 
+  } */
+  
+  a{
+    text-decoration: none;
+  }
+  a:link{
+   color: white;
+  }
+  a:visited{
+   color: white;
+  }
+  a:hover{
+   color: white;
+  }
+  a:active{
+   color: white;
+  }
 
   .hvr-curl-top-left {
-
+    
     background-color: transparent;
     color: white;
     padding: 16px 45px;
@@ -201,7 +224,12 @@ main{
     width: 25px;
     height: 25px;
   }
-  
+  .working{
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 2em;
+
+  }
   
   
 
@@ -210,7 +238,7 @@ main{
     .introTXT{
         padding-top: 280px;
         color: white;
-        font-family: 'Josefin Sans', sans-serif;    
+        /* font-family: 'Josefin Sans', sans-serif;     */
         font-size: 30px;
     }
 }
@@ -302,13 +330,19 @@ main{
 
 /* WELCOME MESSAGE BREAKPOINTS*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .welcomeMessage{
         color: white;
         font-size: 7px;
-        padding-top: 10px;
+        padding-top: 20px;
         margin-right: 10px;
-        font-family: 'Spartan', serif;
+        
+    }
+    #navBrand{
+      padding-top: 20px;
+    }
+    .navbar-toggler{
+      margin-top: 20px;
     }
 
 }
@@ -316,9 +350,10 @@ main{
     .welcomeMessage{
         color: white;
         font-size: px;
-        padding-top: 10px;
+        padding-top: 0px;
         
-        font-family: 'Spartan', serif;
+        
+        
     }
 }
 @media only screen and (min-width: 768px){
@@ -327,7 +362,7 @@ main{
         padding-left: 250px;
         margin-right: 20px;
         padding-top: 10px;
-        font-family: 'Spartan', serif;
+        
     }
 }
 
@@ -336,16 +371,16 @@ main{
         color: white;
         padding-left: 220px;
         padding-top: 10px;
-        font-family: 'Spartan', serif;
+        
     }  
 }
 
 @media only screen and (min-width: 1200px){
     .welcomeMessage{
         color: white;
-        padding-left: 350px;
+        padding-left: 450px;
         padding-top: 10px;
-        font-family: 'Spartan', serif;
+        
     }
 }
 @media only screen and (min-width: 1920px){
@@ -354,7 +389,7 @@ main{
         color: white;
         padding-left: 650px;
         padding-top: 10px;
-        font-family: 'Caveat',sans-serif;
+        
     }
 }
 
@@ -412,18 +447,138 @@ main{
         color: white;
         font-size: 50px;
         text-align: center;
-        padding-top: 230px;
+        padding-top: 0px;
         opacity: 1;
         transition: opacity 0.5s ease;
     }
 }
+/* NAVBAR BREAKPOINTS */
 
-h2{
+@media only screen and (max-width: 480px) {
+  .navbar-toggler{
+    margin-right: 10px;
+  }
+
+}
+
+
+@media only screen and (min-width: 600px){
+  .navbar-toggler{
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  
+}
+
+
+@media only screen and (min-width: 992px){
+   
+}
+
+@media only screen and (min-width: 1200px){
+  
+}
+
+/* TEXT BREAKPOINTS */
+@media only screen and (max-width: 480px) {
+    .skillText{
+      
+      padding: 0px 0px 100px 50px;
+    }
+    h2{
+      font-size: 50px;
+      padding-bottom: 100px;
+      text-align: center;
+      font-weight: bolder;
+    }
+    ol{
+      padding-top: 20px;
+      font-weight: bolder;
+    }
+    .Txt{
+      font-size: 0.7em;
+    }
+
+}
+
+
+@media only screen and (min-width: 600px){
+  
+  .skillText{
+    padding: 0px 0px 100px 50px;
+  }
+  h2{
+    font-size: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-weight: bolder;
+
+  }
+  ol{
+    padding-top: 50px;
+    font-weight: bolder;
+  }
+  .Txt{
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  
+}
+
+
+@media only screen and (min-width: 992px){
+   
+}
+
+@media only screen and (min-width: 1200px){
+  
+}
+
+/* CARD BREAKPOINTS */
+@media only screen and (max-width: 480px) {
+  .col-sm-2{
+    padding: 0px 0px 100px 105px;
+  }
+  .working{
+    padding-top: 0px;
+  }
+
+}
+
+
+@media only screen and (min-width: 600px){
+  .navbar-toggler{
+    margin-right: 20px;
+  }
+  .col-sm-2{
+    
+    padding: 0px 200px 0px 120px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  
+}
+
+
+@media only screen and (min-width: 992px){
+   
+}
+
+@media only screen and (min-width: 1200px){
+  
+}
+
+/* h2{
     font-size: 50px;
     padding-bottom: 200px;
     text-align: center;
     font-weight: bolder;
-}
+} */
 
 .skill{
     padding: 0px 40px 0px 0px;
@@ -476,6 +631,8 @@ h2{
   margin-left: -3px;
   top: 0px;
 }*\
+
+
 
 /* CARD COMPONENT */
 
