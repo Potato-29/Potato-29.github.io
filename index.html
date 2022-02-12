@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime&family=Roboto&family=VT323&family=Fredericka+the+Great&family=Bebas+Neue&family=Gruppo&family=Caveat&family=Dancing+Script&family=Julius+Sans+One&family=Playfair+Display&family=Press+Start+2P&family=Unica+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-
+    <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@1.1.8/dist/circularProgressBar.min.js"></script>
 </head>
 <body>
     <nav class="navbar fixed-top transparent navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" id="navBrand">HELLO.
-            </a><hr><div class="vl"></div>
+            </a><div class="vl"></div>
             <div class="welcomeMessage mb-2" id="msg">Welcome to my portfolio</div>
             <button class="navbar-toggler" type="button" id="add_after" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -86,31 +86,85 @@
             <div data-aos="zoom-out" class="col-lg-2 skillBar1" >
                 <div class="html">HTML</div>
                 <div class="pie"
-                    data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 90, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
+                    data-pie='{ "fill": "#F0FFFF",
+                    "percent": 90,
+                    "stroke": 12,
+                    "lineargradient": ["#21618C","#5DADE2"],
+                    "size": 150,
+                    "strokeBottom": 10,
+                    "colorSlice": "#4E342E",
+                    "colorCircle": "#F0FFFF",
+                    
+                    "round": true }'>
                 </div>
                 <div class="React">React JS</div>
                 <div class="pie"
-                    data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 50, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
+                    data-pie='{ "fill": "#F0FFFF",
+                    "percent": 50,
+                    "stroke": 12,
+                    "lineargradient": ["#21618C","#5DADE2"],
+                    "size": 150,
+                    "strokeBottom": 10,
+                    "colorSlice": "#4E342E",
+                    "colorCircle": "#F0FFFF",
+                
+                    "round": true }'>
                 </div>
             </div>
             <div data-aos="zoom-out" class="col-lg-2 skillBar2">
                 <div class="css">CSS</div>
                 <div class="pie"
-                    data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 75, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
+                    data-pie='{ "fill": "#F0FFFF",
+                    "percent": 75,
+                    "stroke": 12,
+                    "lineargradient": ["#21618C","#5DADE2"],
+                    "size": 150,
+                    "strokeBottom": 10,
+                    "colorSlice": "#4E342E",
+                    "colorCircle": "#F0FFFF",
+                    
+                    "round": true }'>
                 </div>
                 <div class="flutter">Flutter</div>
                 <div class="pie"
-                    data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 50, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
+                    data-pie='{ "fill": "#F0FFFF",
+                    "percent": 50,
+                    "stroke": 12,
+                    "lineargradient": ["#21618C","#5DADE2"],
+                    "size": 150,
+                    "strokeBottom": 10,
+                    "colorSlice": "#4E342E",
+                    "colorCircle": "#F0FFFF",
+                    
+                    "round": true }'>
                 </div>
             </div>
             <div data-aos="zoom-out" class="col-lg-2 skillBar3">
                 <div class="js">JavaScript</div>
                 <div class="pie"
-                    data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent": 60, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
-                </div>
+                data-pie='{ "fill": "#F0FFFF",
+                "percent": 60,
+                "stroke": 12,
+                "lineargradient": ["#21618C","#5DADE2"],
+                "size": 150,
+                "strokeBottom": 10,
+                "colorSlice": "#4E342E",
+                "colorCircle": "#F0FFFF",
+                
+                "round": true }'>
+            </div>
                 <div class="Angularjs">Bootstrap</div>
                 <div class="pie"
-                    data-pie='{ "lineargradient": ["#21618C","#5DADE2"], "round": true, "percent":75, "size": 150,  "colorSlice": "#4CAF50", "colorCircle": "#e6e6e6" }'>
+                    data-pie='{ "fill": "#F0FFFF",
+                    "percent": 75,
+                    "stroke": 12,
+                    "lineargradient": ["#21618C","#5DADE2"],
+                    "size": 150,
+                    "strokeBottom": 10,
+                    "colorSlice": "#4E342E",
+                    "colorCircle": "#F0FFFF",
+                    
+                    "round": true }'>
                 </div>
             </div>
             
@@ -120,11 +174,11 @@
         <h2 class="aboutHeading" id="aboutSection">About Me   &nbsp;/&nbsp;   My Works</h2>
         <div class="row">
             <div class="col-lg-6" id="about">
-                Hello! My name is Prayas and I enjoy creating things that live on the internet. My interest in web development started back in 2016 when i learned HTML in school - turns out hacking together a form website taught me a lot about HTML & CSS!
+                <p id="aboutTxt">Hello! My name is Prayas and I enjoy creating things that live on the internet. My interest in web development started back in 2016 when i learned HTML in school - turns out hacking together a form website taught me a lot about HTML & CSS!
     
                 Fast-forward to today, and I’ve had the privilege of working at an advertising agency and a start up. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
     
-                Recently I'm working on an Appointment booking and online health consulting app with flutter.<br><br>
+                Recently I'm working on an Appointment booking and online health consulting app with flutter.<br><br></p>
     
                 
             </div>
@@ -216,7 +270,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/JS/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="circular-progress-bar-master/docs/circularProgressBar.min.js"></script>
+    <!-- <script src="circular-progress-bar-master/docs/circularProgressBar.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

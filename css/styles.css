@@ -1,3 +1,13 @@
+
+/* USE THIS TO DEBUG CSS */
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+
 /* GLOBAL FONTS */
 #navBrand, .working, h3, li, #contactInfo, .copyright, .footerTxt, .aboutHeading, #about, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
     /*Fredricka is a great font*/  
@@ -8,6 +18,7 @@
 
 }
 body{
+    overflow-x: hidden;
     background-color: #f5f5f5;
 }
 #navBrand, .introTXT, .welcomeMessage, .nav-item, .hvr-curl-top-left{
@@ -68,6 +79,7 @@ main{
   margin: 20px auto;
   padding-top: 1000px;
 }
+
 .navbar.transparent.navbar-expand-lg.navbar-light{
     background: rgba(0,0,0,0.4);
 }
@@ -230,9 +242,11 @@ main{
     font-size: 2em;
 
   }
+  .pie{
+    filter: drop-shadow(3px 3px 3px black);
+  }
   
-  
-
+/*////////////////////////////////////////////////////////// ALL MEDIA QUERIES///////////////////////////////////////////// */
 
 @media only screen and (max-width: 600px) {
     .introTXT{
@@ -244,23 +258,23 @@ main{
 }
 
 
-/*SKILL SECTION BREAKPOINTS*/
+/* //////////////////////////////////////////////SKILL SECTION BREAKPOINTS///////////////////////////////////////////////////*/
 
 
 
 
 @media only screen and (max-width: 1920px){
     .skillBar1{
-        
+        padding-left: 50px;
     }
     .skillBar2{
-        
+        padding-left: 50px;
     }
     .skillBar3{
-        
+        padding-left: 50px;
     }
     .skillBar4{
-        
+        padding: 0px;
     }
     .skillBar5{
         
@@ -315,7 +329,7 @@ main{
         margin-bottom: 70px;
     }
     .skillBar1{
-        padding-top: 60px;   
+        padding-top: 0px;   
     }
     .skillBar2{
         padding-top: 60px;
@@ -324,11 +338,28 @@ main{
         padding-top: 60px;
     }
 }
+@media only screen and (max-width: 480px){
+
+  .skillText{
+      margin-bottom: 70px;
+  }
+  .skillBar1{
+    
+       
+  }
+  .skillBar2{
+      
+  }
+  .skillBar3{
+      
+  }
+}
 
 
 
 
-/* WELCOME MESSAGE BREAKPOINTS*/
+
+/* /////////////////////////////////////////////////////WELCOME MESSAGE BREAKPOINTS/////////////////////////////////////////*/
 
 @media only screen and (max-width: 480px) {
     .welcomeMessage{
@@ -393,7 +424,7 @@ main{
     }
 }
 
-/* DOWN ARROW BREAKPOINTS */
+/* ./////////////////////////////////////////////////////DOWN ARROW ICON BREAKPOINTS///////////////////////////////////////// */
 
 @media only screen and (max-width: 600px) {
     .material-icons.md-24{
@@ -452,7 +483,7 @@ main{
         transition: opacity 0.5s ease;
     }
 }
-/* NAVBAR BREAKPOINTS */
+/* ////////////////////////////////////////////////////NAVBAR BREAKPOINTS/////////////////////////////////////////////// */
 
 @media only screen and (max-width: 480px) {
   .navbar-toggler{
@@ -481,7 +512,7 @@ main{
   
 }
 
-/* TEXT BREAKPOINTS */
+/* ///////////////////////////////////////////////////////TEXT BREAKPOINTS/////////////////////////////////////////////////// */
 @media only screen and (max-width: 480px) {
     .skillText{
       
@@ -538,7 +569,37 @@ main{
   
 }
 
-/* CARD BREAKPOINTS */
+/* //////////////////////////////////////ABOUT TEXT BREAKPOINTS///////////////////////////////////////////////////////////////////   */ 
+
+@media only screen and (max-width: 480px) {
+  #aboutTxt{
+    font-size: 0.9em;
+  }
+  #about{
+    padding: 0px 50px 50px 50px;
+  }
+
+}
+
+
+@media only screen and (min-width: 600px){
+  
+}
+
+@media only screen and (min-width: 768px){
+  
+}
+
+
+@media only screen and (min-width: 992px){
+   
+}
+
+@media only screen and (min-width: 1200px){
+  
+}
+
+/* //////////////////////////////////////////////////CARD BREAKPOINTS///////////////////////////////////////////////////////// */
 @media only screen and (max-width: 480px) {
   .col-sm-2{
     padding: 0px 0px 100px 105px;
@@ -580,6 +641,10 @@ main{
     font-weight: bolder;
 } */
 
+#aboutTxt{
+  font-size: 1em;
+}
+
 .skill{
     padding: 0px 40px 0px 0px;
     margin-top: 240px;
@@ -587,6 +652,7 @@ main{
     margin-bottom: 150px;
 }
 .skillText{
+  
     font-size: 1.7rem;
 }
 

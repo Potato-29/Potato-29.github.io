@@ -12,7 +12,7 @@ var arrow =  document.getElementById('icon');
 
 //var message = document.createElement("div");
 window.addEventListener('DOMContentLoaded', () =>{
-    const circle = new CircularProgressBar('pie');
+    const circle = new CircularProgressBar('pie'); circle.initial()
 } );
 
 function isInViewport(el) {
