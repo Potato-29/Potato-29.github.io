@@ -8,6 +8,33 @@ var nav = document.querySelector('nav');
 var welcomeMsg = document.getElementById('msg');
 var color = document.getElementsByTagName(nav);
 var arrow =  document.getElementById('icon');
+var progressbar = document.getElementById('progressBars');
+var pies = document.getElementsByClassName("pie");
+
+
+
+
+var width = window.innerWidth;
+
+
+
+
+
+// if (width <= 595) {
+//     progressbar.style.visibility = "visible"
+//     pies.style.visibility = "hidden"
+    
+// } else {
+//     progressbar.style.visibility = "hidden"
+//     pies.style.visibility = "visible"
+// }
+
+
+
+
+
+
+console.log(width);
 
 
 //var message = document.createElement("div");
@@ -28,7 +55,8 @@ function isInViewport(el) {
     
 var header = document.getElementById('btn');
 var skillSection = document.getElementById('skills');
-var projects = document.getElementById('aboutSection');
+var about = document.getElementById('aboutSection');
+var projects = document.getElementById('workSection');
 var footer = document.getElementById('footerSection');
 var message = document.getElementById('msg');
 
@@ -45,6 +73,16 @@ document.addEventListener('scroll', function () {
         }
         else{
             message.textContent = "Skills"
+            message.style.paddingLeft = "500px"
+        }
+       
+    }
+    else if(isInViewport(about)){
+        if(mobile.matches || tablet.matches){
+            message.textContent = "About Me"
+        }
+        else{
+            message.textContent = "About Me"
             message.style.paddingLeft = "500px"
         }
        
@@ -103,4 +141,6 @@ window.onscroll = () =>{
     }
 
 }
+
+
 

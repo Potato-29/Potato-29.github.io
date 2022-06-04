@@ -5,8 +5,8 @@
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-} */
-
+}
+ */
 
 /* GLOBAL FONTS */
 #navBrand, .working, h3, li, #contactInfo, .copyright, .footerTxt, .aboutHeading, #about, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
@@ -44,10 +44,12 @@ nav{
     padding: 10px 10px 10px 20px;    
 }
 header{
-    background:     linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0)
-      ), url("/assets/images/img2.jpg") no-repeat center center fixed; 
+    background:
+         linear-gradient(
+           
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 1)
+      ), url("/assets/images/img5.jpg") no-repeat center right fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -95,19 +97,77 @@ main{
     font-size: 50px;
     margin: 20px;
 }
-.brand1{
-    /* padding: 50px 50px 50px 50px; */
-    margin-right: 50px;
-    /* border: solid 2px red; */
-    border-radius: 300px;
-    
+
+
+/* .brand1{
+  background: url('/assets/images/blob-haikei.png') center center;
+}
+.brand3{
+  background: url('/assets/images/blob-haikei2.png') center center;
+} */
+
+
+.work-card1{
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow:  50px 50px 100px #d9d9d9,
+  -50px -50px 100px #ffffff;
+}
+.work-card2{
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow:  50px 50px 100px #d9d9d9,
+  -50px -50px 100px #ffffff;
+}
+.work-card3{
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow:  50px 50px 100px #d9d9d9,
+  -50px -50px 100px #ffffff;
+}
+.work-info{
+  color: black;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #eaeaea;
+  padding: 1rem;
+}
+.work-img1{
+  height: 200px;
+  width: 300px;
+  object-fit: contain;
+}
+.work-img2{
+  height: 200px;
+  width: 300px;
+  object-fit: contain;
+}
+.work-img3{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
 }
 
+.project-name{
+  font-weight: 900;
+}
+.badges{
+  margin-bottom: 0.7rem;
+}
+
+
+
+/* .brand1{
+    /* padding: 50px 50px 50px 50px; */
+    /* margin-right: 50px; */
+    /* border: solid 2px red; */
+    /* border-radius: 300px; */
+    
+/* } */
+/* 
 .brand3{
     
     margin-right: 50px;
-}
-
+} */
 .chickBlind{
     height: 100px;
     width: 200px;
@@ -118,11 +178,11 @@ main{
     width: 100px;
 }
 #about{
-    padding: 10px 90px 100px 90px;
+    padding: 10px 200px 0px 0px;
     font-weight: bolder;
 }
 .aboutHeading{
-    padding: 10px 10px 60px 10px;
+    padding: 10px 10px 30px 10px;
     font-weight: bolder;   
 }
 .healthKeeper{
@@ -133,7 +193,21 @@ main{
   margin-right: auto;
 }
 .aboutWrapper{
-    padding-bottom: 200px;
+  
+  padding: 0px 0px 50px 0px;
+  margin: 20px;
+  border-radius: 10px ;
+  
+
+  
+  
+  
+}
+
+
+
+.workWrapper{
+    padding-bottom: 100px;
 }
 .footerTxt{
     text-align: center;
@@ -248,6 +322,11 @@ main{
   
 /*////////////////////////////////////////////////////////// ALL MEDIA QUERIES///////////////////////////////////////////// */
 
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     .introTXT{
         padding-top: 280px;
@@ -256,6 +335,7 @@ main{
         font-size: 30px;
     }
 }
+
 
 
 /* //////////////////////////////////////////////SKILL SECTION BREAKPOINTS///////////////////////////////////////////////////*/
@@ -345,7 +425,6 @@ main{
   }
   .skillBar1{
     
-       
   }
   .skillBar2{
       
@@ -409,7 +488,8 @@ main{
 @media only screen and (min-width: 1200px){
     .welcomeMessage{
         color: white;
-        padding-left: 450px;
+        
+        padding-left: 475px;
         padding-top: 10px;
         
     }
@@ -418,6 +498,7 @@ main{
     .welcomeMessage{
         font-size: 30px;
         color: white;
+        text-align: center;
         padding-left: 650px;
         padding-top: 10px;
         
@@ -649,10 +730,10 @@ main{
     padding: 0px 40px 0px 0px;
     margin-top: 240px;
     
-    margin-bottom: 150px;
+    margin-bottom: 0px;
 }
 .skillText{
-  
+    padding-bottom: 4rem;
     font-size: 1.7rem;
 }
 
@@ -1089,8 +1170,113 @@ main{
     margin-bottom:0;
   }
 
+.ion-location{
   
+ margin: 10px 10px 10px 90%; 
+ font-size: 2em;
+  color: rgb(183, 57, 57);
+}
 
+
+
+.location{
+  font-size: 1em;
+   
+}
+
+ #myPic{
+   border-radius: 10px;
+   height: 100%;
+   width: 60%;
+   margin: 0px 0px 0px 10rem;
+  -webkit-box-shadow: 1px 2px 16px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 16px 2px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 16px 2px rgba(0,0,0,0.75);
+  
+  transition: transform .2s;
+ }
+
+ #myPic:hover{
+  transform: scale(1.3);
+  
+ }
+
+ #name{
+  font-size: 1.3em;
+ }
+
+ #name2{
+  font-size: 0.9em;
+ }
+
+ #age{
+  font-size: 1.3em;
+ }
+
+ #age2{
+   font-size: 0.9em;
+ }
+
+ #likes{
+  font-size: 1.3em;
+ }
+
+ #likes2{
+   font-size: 0.9em;
+ }
+
+ #edu{
+   font-size: 1.3em;
+ }
+
+ #edu2{
+   font-size: 0.7em;
+ }
+
+ #lives{
+   font-size: 1.3em;
+ }
+ 
+ #lives2{
+   font-size: 0.9em;
+ }
+
+ #bio{
+   font-size: 1.5em;
+ }
+
+ .progressBars{
+   visibility: hidden;
+ }
+.pie{
+  visibility: visible;
+}
+
+.workHeading{
+  font-weight: bold;
+  margin: 1rem;
+  font-size: 3em;
+  text-align: center;
+}
+
+.project-links{
+  text-decoration: none;
+}
+
+ .rounded{
+  margin-bottom: 100px;
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .progress-bar{
+   margin: 1rem;
+ }
+  
+/* //////////////////////////////////////////////////////////////PRELOADER////////////////////////////////////////////////////////////////////// */
   #preloader{
     background: #000 url(/assets/loader3.gif) no-repeat center center;
     height: 100vh;
@@ -1100,3 +1286,66 @@ main{
 
 
   }
+
+
+
+
+
+  @media only screen and (max-width: 1920px){
+    
+  }
+  
+  @media only screen and (max-width: 1200px){
+    #myPic{
+      
+    }
+  }
+  
+  @media only screen and (max-width: 889px){
+    #myPic{
+      /* margin-right: 200px; */
+    }
+  }
+  
+  @media only screen and (max-width: 768px){
+    #myPic{
+      /* margin-right: 200px; */
+    }
+  }
+  @media only screen and (max-width: 600px){
+    #myPic{
+      
+    }
+  }
+  @media only screen and (max-width: 595px){
+    .aboutHeading{
+      text-align: center;
+      margin: 7rem 0 1rem 0;
+      font-size: 3em;
+    }
+    #myPic{
+      margin: 1rem 0 1rem 0;
+      width: 100%;
+    }
+    #about{
+      margin: 1rem;
+      padding: 1rem;
+      width: 100%;
+    }
+    #myPic:hover{
+      transform: scale(1);
+    }
+    .work-img1{
+      width: 100%;
+      object-fit: contain;
+    }
+    .work-img2{
+      width: 100%;
+      object-fit: contain;
+    }
+    .work-img3{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  
