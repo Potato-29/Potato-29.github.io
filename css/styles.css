@@ -8,6 +8,9 @@
 }
  */
 
+
+
+
 /* GLOBAL FONTS */
 #navBrand, .working, h3, li, #contactInfo, .copyright, .footerTxt, .aboutHeading, #about, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
     /*Fredricka is a great font*/  
@@ -329,13 +332,22 @@ main{
 
 @media only screen and (max-width: 600px) {
     .introTXT{
-        padding-top: 280px;
+        /* padding-top: 280px; */
         color: white;
         /* font-family: 'Josefin Sans', sans-serif;     */
         font-size: 30px;
     }
 }
-
+@media only screen and (max-width: 1920px) {
+  .introTXT{
+    padding-top: 500px;
+    
+  }
+  .material-icons.md-24{
+    margin-top: 100px;
+  }
+  
+}
 
 
 /* //////////////////////////////////////////////SKILL SECTION BREAKPOINTS///////////////////////////////////////////////////*/
@@ -345,13 +357,13 @@ main{
 
 @media only screen and (max-width: 1920px){
     .skillBar1{
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
     .skillBar2{
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
     .skillBar3{
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
     .skillBar4{
         padding: 0px;
@@ -366,6 +378,7 @@ main{
 }
 
 @media only screen and (max-width: 1200px){
+  
     .skillBar1{
         
     }
@@ -378,6 +391,9 @@ main{
 }
 
 @media only screen and (max-width: 992px){
+  .skill{
+    margin: 0 0 0 0rem;
+  }
     .skillBar1{
         
     }
@@ -394,28 +410,33 @@ main{
         padding-left: 40px;
     }
     .skillBar1{
-        padding-left: 120px;
+        /* padding-left: 120px; */
     }
     .skillBar2{
-        padding-left: 120px;
+        /* padding-left: 120px; */
     }
     .skillBar3{
-        padding-left: 120px;
+        /* padding-left: 120px; */
     }
 }
 @media only screen and (max-width: 600px){
 
     .skillText{
-        margin-bottom: 70px;
+        margin-bottom: 0px;
     }
     .skillBar1{
-        padding-top: 0px;   
+        padding-top: 0px;
+        margin-left: 5rem;
     }
     .skillBar2{
         padding-top: 60px;
+        margin-left: 5rem;
+
     }
     .skillBar3{
         padding-top: 60px;
+        margin-left: 5rem;
+
     }
 }
 @media only screen and (max-width: 480px){
@@ -424,12 +445,15 @@ main{
       margin-bottom: 70px;
   }
   .skillBar1{
+    margin-left: 5rem;
     
   }
   .skillBar2{
+    margin-left: 5rem;
       
   }
   .skillBar3{
+    margin-left: 5rem;
       
   }
 }
@@ -496,7 +520,7 @@ main{
 }
 @media only screen and (min-width: 1920px){
     .welcomeMessage{
-        font-size: 30px;
+        font-size: 1em;
         color: white;
         text-align: center;
         padding-left: 650px;
@@ -597,11 +621,11 @@ main{
 @media only screen and (max-width: 480px) {
     .skillText{
       
-      padding: 0px 0px 100px 50px;
+      padding: 0px 1rem 0 1rem;
     }
     h2{
       font-size: 50px;
-      padding-bottom: 100px;
+      padding-bottom: 2rem;
       text-align: center;
       font-weight: bolder;
     }
@@ -619,7 +643,7 @@ main{
 @media only screen and (min-width: 600px){
   
   .skillText{
-    padding: 0px 0px 100px 50px;
+    padding: 0px 0px 0px 50px;
   }
   h2{
     font-size: 50px;
@@ -677,7 +701,14 @@ main{
 }
 
 @media only screen and (min-width: 1200px){
-  
+  #aboutTxt{
+    /* font-size: 2em; */
+  }
+}
+@media only screen and (max-width: 1920px){
+  #about{
+    font-size: 1.3em;
+  }
 }
 
 /* //////////////////////////////////////////////////CARD BREAKPOINTS///////////////////////////////////////////////////////// */
@@ -727,8 +758,8 @@ main{
 }
 
 .skill{
-    padding: 0px 40px 0px 0px;
-    margin-top: 240px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 3rem;
     
     margin-bottom: 0px;
 }
@@ -1186,7 +1217,7 @@ main{
 
  #myPic{
    border-radius: 10px;
-   height: 100%;
+   height: auto;
    width: 60%;
    margin: 0px 0px 0px 10rem;
   -webkit-box-shadow: 1px 2px 16px 2px rgba(0,0,0,0.75);
@@ -1289,16 +1320,97 @@ main{
 
 
 
+  @media only screen and (max-width: 1920px){
+    .work-img1, .work-img2, .work-img3{
+      /* height: auto; */
+      width: 100%;
+      
+    }
+    .project-name{
+      font-size: 1.4em;
+    }
+    h6{
+      font-size: 0.7em;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px){
+    
+    .work-img1, .work-img2, .work-img3{
+      /* height: auto; */
+      width: 100%;
+    }
+    .work-info{
+      
+    }
+    .project-name{
+      font-size: 1.2em;
+    }
+    h6{
+      font-size: 0.7em;
+    }
+  }
+  
+  @media only screen and (max-width: 900px){
+    .work-img1, .work-img2, .work-img3{
+      /* height: auto; */
+      
+    }
+    .work-info{
+      
+    }
+    .project-name{
+      font-size: 1em;
+    }
+    h6{
+      font-size: 0.7em;
+    }
+  }
+  
+  @media only screen and (max-width: 768px){
+    
+  }
+  @media only screen and (max-width: 600px){
+    
+  }
+  @media only screen and (max-width: 595px){
+    
+  }
+
+
+
 
 
   @media only screen and (max-width: 1920px){
-    
+    #myPic{
+      margin-left: 250px;
+      height: auto;
+    }
+    .work-img1{
+      width: 100%;
+      object-fit: contain;
+    }
+    .work-img2{
+      width: 100%;
+      object-fit: contain;
+    }
+    .work-img3{
+      width: 100%;
+      object-fit: cover;
+    }
   }
   
   @media only screen and (max-width: 1200px){
     #myPic{
-      
+      height: auto;
+      margin: 0 0 0 7rem;
     }
+    #about{
+      padding: 0;
+      font-size: 0.7em;
+      padding: 0 3rem 0 0;
+    }
+    
   }
   
   @media only screen and (max-width: 889px){
@@ -1310,6 +1422,9 @@ main{
   @media only screen and (max-width: 768px){
     #myPic{
       /* margin-right: 200px; */
+    }
+    #about{
+      padding: 1rem;
     }
   }
   @media only screen and (max-width: 600px){
@@ -1348,4 +1463,6 @@ main{
       object-fit: cover;
     }
   }
+  
+
   
