@@ -9,7 +9,9 @@
  */
 
 
-
+.row{
+  margin: 0;
+}
 
 /* GLOBAL FONTS */
 #navBrand, .working, h3, li, #contactInfo, .copyright, .footerTxt, .aboutHeading, #about, .hvr-curl-top-left, .introTXT, .skillText, .html, .css, .js, .pie, h2, .React, .flutter, .Angularjs{
@@ -40,9 +42,10 @@ nav{
 
 #navBrand{
     font-size: 40px;
-    padding: 10px;
+    /* padding: 10px; */
     
 }
+
 .nav-item{
     padding: 10px 10px 10px 20px;    
 }
@@ -52,7 +55,7 @@ header{
            
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 1)
-      ), url("/assets/images/img5.jpg") no-repeat center right fixed; 
+      ), url("/assets/images/img5low.jpg") no-repeat center right fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -98,7 +101,11 @@ main{
     
     /*Caveat font is good*/ 
     font-size: 50px;
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
+    /* margin: 20px; */
+}
+.brand1, .brand2, .brand3{
+  padding: 0;
 }
 
 
@@ -445,16 +452,17 @@ main{
       margin-bottom: 70px;
   }
   .skillBar1{
-    margin-left: 5rem;
-    
+    margin-left: 6rem;
+    width: auto;
   }
   .skillBar2{
-    margin-left: 5rem;
+    margin-left: 6rem;
+    width: auto;
       
   }
   .skillBar3{
-    margin-left: 5rem;
-      
+    margin-left: 6rem;
+    width: auto;
   }
 }
 
@@ -468,22 +476,23 @@ main{
     .welcomeMessage{
         color: white;
         font-size: 7px;
-        padding-top: 20px;
-        margin-right: 10px;
+        padding-top: 10px;
+        margin-right: 0px;
+        /* display: none; */
         
     }
     #navBrand{
-      padding-top: 20px;
+      /* padding-top: 20px; */
     }
     .navbar-toggler{
-      margin-top: 20px;
+      /* margin-top: 20px; */
     }
 
 }
 @media only screen and (min-width: 600px){
     .welcomeMessage{
         color: white;
-        font-size: px;
+        font-size: 0px;
         padding-top: 0px;
         
         
@@ -705,7 +714,7 @@ main{
     /* font-size: 2em; */
   }
 }
-@media only screen and (max-width: 1920px){
+@media only screen and (min-width: 1920px){
   #about{
     font-size: 1.3em;
   }
@@ -1443,7 +1452,7 @@ main{
       width: 100%;
     }
     #about{
-      margin: 1rem;
+      /* margin: 1rem; */
       padding: 1rem;
       width: 100%;
     }
