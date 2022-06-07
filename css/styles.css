@@ -9,7 +9,7 @@
  */
 
 
-.row{
+ .row{
   margin: 0;
 }
 
@@ -334,7 +334,12 @@ main{
 
 
 
+@media only screen and (max-width: 480px){
+  .introTXT{
+    padding-top: 60px;
 
+  }
+}
 
 
 @media only screen and (max-width: 600px) {
