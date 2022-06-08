@@ -9,7 +9,7 @@
  */
 
 
-.row{
+ .row{
   margin: 0;
 }
 
@@ -334,7 +334,12 @@ main{
 
 
 
+@media only screen and (max-width: 480px){
+  .introTXT{
+    padding-top: 100px;
 
+  }
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -1228,7 +1233,7 @@ main{
    border-radius: 10px;
    height: auto;
    width: 60%;
-   margin: 0px 0px 0px 10rem;
+   margin: 0px 0px 0px 13rem;
   -webkit-box-shadow: 1px 2px 16px 2px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 2px 16px 2px rgba(0,0,0,0.75);
   box-shadow: 1px 2px 16px 2px rgba(0,0,0,0.75);
@@ -1390,7 +1395,7 @@ main{
 
 
 
-  @media only screen and (max-width: 1920px){
+  @media only screen and (min-width: 1920px){
     #myPic{
       margin-left: 250px;
       height: auto;
