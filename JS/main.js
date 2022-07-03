@@ -66,59 +66,59 @@ var message = document.getElementById('msg');
 var mobile = window.matchMedia("(max-width: 480px)")
 var tablet = window.matchMedia("(min-width: 600px)")
 
-document.addEventListener('scroll', function () {
-    if(isInViewport(skills)){
-        if(mobile.matches || tablet.matches){
-            message.textContent = "Skills"
-        }
-        else{
-            message.textContent = "Skills"
-            message.style.paddingLeft = "500px"
-        }
+// document.addEventListener('scroll', function () {
+//     if(isInViewport(skills)){
+//         if(mobile.matches || tablet.matches){
+//             message.textContent = "Skills"
+//         }
+//         else{
+//             message.textContent = "Skills"
+//             message.style.paddingLeft = "500px"
+//         }
        
-    }
-    else if(isInViewport(about)){
-        if(mobile.matches || tablet.matches){
-            message.textContent = "About Me"
-        }
-        else{
-            message.textContent = "About Me"
-            message.style.paddingLeft = "500px"
-        }
+//     }
+//     else if(isInViewport(about)){
+//         if(mobile.matches || tablet.matches){
+//             message.textContent = "About Me"
+//         }
+//         else{
+//             message.textContent = "About Me"
+//             message.style.paddingLeft = "500px"
+//         }
        
-    }
+//     }
     
-    else if(isInViewport(projects)){
-        if(mobile.matches || tablet.matches){
-            message.textContent = "Projects"
-        }
-        else{
-            message.textContent = "Projects"
-            message.style.paddingLeft = "500px"
-        }
+//     else if(isInViewport(projects)){
+//         if(mobile.matches || tablet.matches){
+//             message.textContent = "Projects"
+//         }
+//         else{
+//             message.textContent = "Projects"
+//             message.style.paddingLeft = "500px"
+//         }
         
-    }
-    else if(isInViewport(footer)){
-        if(mobile.matches || tablet.matches){
-            message.textContent = "End"
+//     }
+//     else if(isInViewport(footer)){
+//         if(mobile.matches || tablet.matches){
+//             message.textContent = "End"
 
-        }
-        else{
-            message.textContent = "End"
-            message.style.paddingLeft = "500px"
+//         }
+//         else{
+//             message.textContent = "End"
+//             message.style.paddingLeft = "500px"
 
-        }
-    }
+//         }
+//     }
     
-    else if(isInViewport(header)){
-        message.textContent = "Welcome to my portfolio"
+//     else if(isInViewport(header)){
+//         message.textContent = "Welcome to my portfolio"
         
-        message.removeAttribute("style")
+//         message.removeAttribute("style")
        
-    }
-}, {
-    passive: true
-});
+//     }
+// }, {
+//     passive: true
+// });
 
 
 
