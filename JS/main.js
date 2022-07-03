@@ -1,4 +1,4 @@
-
+// import 'animate.css';
 
 AOS.init();
 
@@ -10,11 +10,11 @@ var color = document.getElementsByTagName(nav);
 var arrow =  document.getElementById('icon');
 var progressbar = document.getElementById('progressBars');
 var pies = document.getElementsByClassName("pie");
-
-
+var waveIcon = document.getElementById('wave-icon')
 
 
 var width = window.innerWidth;
+
 
 
 
@@ -101,10 +101,12 @@ document.addEventListener('scroll', function () {
     else if(isInViewport(footer)){
         if(mobile.matches || tablet.matches){
             message.textContent = "End"
+
         }
         else{
             message.textContent = "End"
             message.style.paddingLeft = "500px"
+
         }
     }
     
