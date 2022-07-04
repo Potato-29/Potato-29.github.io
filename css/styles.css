@@ -135,6 +135,26 @@ main{
   box-shadow:  50px 50px 100px #d9d9d9,
   -50px -50px 100px #ffffff;
 }
+.work-card4{
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow:  50px 50px 100px #d9d9d9,
+  -50px -50px 100px #ffffff;
+}
+.work-card5{
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow:  50px 50px 100px #d9d9d9,
+  -50px -50px 100px #ffffff;
+}
+.work-card6{
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow:  50px 50px 100px #d9d9d9,
+  -50px -50px 100px #ffffff;
+}
+
+
 .work-info{
   color: black;
   border-radius: 0px 0px 20px 20px;
@@ -155,6 +175,24 @@ main{
   height: 200px;
   width: 300px;
   object-fit: cover;
+}
+.work-img4{
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px 20px 0 0;
+}
+.work-img5{
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px 20px 0 0;
+}
+.work-img6{
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 20px 20px 0 0;
 }
 
 .project-name{
@@ -340,6 +378,10 @@ main{
     width: 95px;
     margin: 1rem 2rem;
   }
+  .vlr-link{
+    color: black;
+  }
+  
 
 /*////////////////////////////////////////////////////////// ALL MEDIA QUERIES///////////////////////////////////////////// */
 
@@ -1326,6 +1368,50 @@ main{
 .project-links{
   text-decoration: none;
 }
+.project-links:active{
+  color: #000;
+}
+.project-links:link{
+  color: red;
+}
+.project-links:hover{
+  color: #000;
+}
+.project-links:visited{
+  color: #000;
+}
+.vlr-link{
+  font-weight: bold;
+}
+.vlr-link:active{
+  color: #000;
+}
+.vlr-link:link{
+  color: #000;
+}
+.vlr-link:hover{
+  color: black;
+}
+.vlr-link:visited{
+  color: black;
+}
+
+
+.openweather-link{
+  font-weight: bold;
+}
+.openweather-link:active{
+  color: #000;
+}
+.openweather-link:link{
+  color: #000;
+}
+.openweather-link:hover{
+  color: black;
+}
+.openweather-link:visited{
+  color: black;
+}
 
  .rounded{
   margin-bottom: 100px;
@@ -1354,7 +1440,7 @@ main{
 
 
   @media only screen and (max-width: 1920px){
-    .work-img1, .work-img2, .work-img3{
+    .work-img1, .work-img2, .work-img3, .work-img4, .work-img5, .work-img6{
       /* height: auto; */
       width: 100%;
       
@@ -1498,4 +1584,5 @@ main{
   }
   
 
+  
   
