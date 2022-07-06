@@ -381,6 +381,15 @@ main{
   .vlr-link{
     color: black;
   }
+  .insta{
+    color: rgb(192, 33, 192)
+  }
+  .linked-in{
+    color: rgb(59, 59, 209);
+  }
+  .twitter{
+    color: cyan;
+  }
   
 
 /*////////////////////////////////////////////////////////// ALL MEDIA QUERIES///////////////////////////////////////////// */
